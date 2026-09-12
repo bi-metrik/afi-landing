@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+  Artboard de la tarjeta de enlace de afiinternationalgroup.com (1200x630).
+  Se captura con scripts/render-og.mjs, que recorta por el id "og": los numeros
+  de aqui son la unica fuente del tamano, no hay coordenadas en el script.
+
+  La marca es de AFI, no de MeTRIK: fondo #0A1628, acento #CE114E a #CD981E e
+  Inter, los mismos tokens que declara el tailwind.config de index.html. El
+  logotipo se referencia desde marca/ y no desde i.ibb.co, para que la tarjeta
+  no dependa de un host externo que nadie del equipo controla.
+-->
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #334155; }
+  #og {
+    width: 1200px; height: 630px; box-sizing: border-box;
+    padding: 72px 80px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    font-family: Inter, sans-serif;
+    background-color: #0A1628;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23132038' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #FFFFFF;
+  }
+  /* El logotipo de AFI lleva la razon social en azul oscuro: sobre el fondo
+     #0A1628 desaparece. Va sobre una placa blanca, que es como lo presenta la
+     propia barra de navegacion de la landing. */
+  .marca { display: flex; align-items: center; gap: 28px; }
+  .placa { background: #FFFFFF; border-radius: 14px; padding: 16px 26px; display: flex; }
+  .placa img { height: 62px; width: auto; display: block; }
+  .regla { flex: 1; height: 3px; background: linear-gradient(to right, #CE114E, #CD981E); }
+  h1 { margin: 0; font-size: 64px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; max-width: 19ch; }
+  .bajada { margin: 20px 0 0; font-size: 27px; line-height: 1.35; font-weight: 400; color: #94A3B8; max-width: 30ch; }
+  .pie { display: flex; align-items: baseline; justify-content: space-between; }
+  .normas { font-size: 20px; font-weight: 500; color: #64748B; letter-spacing: 0.02em; }
+  .sitio { font-size: 22px; font-weight: 600; color: #CD981E; }
+</style>
+<div id="og">
+  <div class="marca">
+    <div class="placa"><img src="../marca/descarga-2-e1759514991690.png-2.webp" alt="AFI International Group"></div>
+    <div class="regla"></div>
+  </div>
+  <div>
+    <h1>Fortalecemos la confianza empresarial</h1>
+    <p class="bajada">Implementación integral de cumplimiento normativo.</p>
+  </div>
+  <div class="pie">
+    <span class="normas">SARLAFT &middot; SAGRILAFT &middot; PTEE &middot; Ley 1581 &middot; SG-SST &middot; PESV</span>
+    <span class="sitio">afiinternationalgroup.com</span>
+  </div>
+</div>
